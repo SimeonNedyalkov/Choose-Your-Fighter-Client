@@ -1,0 +1,43 @@
+.errorImage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+    background-image: url('../images/error/404-Error.jpg');
+    background-size: cover;
+    background-position: center;
+    height: calc(100vh + 144px);
+    color: white;
+  }
+  .wrapperDiv {
+    position: relative;
+    margin-bottom: 24px;
+  }
+  
+  .error {
+    font-family: Arial, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: red;
+    font-size: 14px;
+    position: absolute;
+    transform: translateY(-50%);
+    white-space: nowrap; 
+    margin-top: 20px;
+  }
+  .error2 {
+    font-family: Arial, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: red;
+    font-size: 14px;
+    position: absolute;
+    transform: translateY(-50%);
+    white-space: nowrap; 
+    margin-top: 50px;
+    left: 0px;
+  }
+  

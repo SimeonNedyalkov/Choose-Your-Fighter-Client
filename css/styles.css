@@ -1,0 +1,33 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.navbar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+}
+.navbar-brand{
+    background-image: url('../images/Logo\ maker\ project.png');
+    background-size: cover;
+    background-position: center; 
+    background-repeat: no-repeat; 
+    padding: 10px; 
+}
+.navbar-nav {
+    display: flex;
+    justify-content: center; 
+    width: 100%; 
+}
+
+.nav-item {
+    margin: 0 10px;
+}
+.title{
+    padding-bottom: 20px;
+}

@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  padding: 0;
+  margin: 0;
+  background-color: black;
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+#root {
+  margin: 0 auto;
+  text-align: center;
+  color: white;
+}
+
+h2 {
+  color: #333;
+}
+
+p {
+  color: #666;
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+input:-webkit-autofill {
+  background-color: transparent !important;
+  -webkit-box-shadow: 0 0 0px 1000px transparent inset !important;
+  -webkit-text-fill-color: inherit !important;
+  transition: background-color 5000s ease-in-out 0s;
+}
+
+input:-webkit-autofill::first-line {
+  color: white !important;
+}

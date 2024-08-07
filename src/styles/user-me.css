@@ -1,0 +1,123 @@
+.backgroundImageUsers{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    background-image: url('../../images/users-me/OIGP.jpg');
+    background-size: cover;
+    background-position: center;
+    width: 99vw;
+    height: calc(100vh + 144px);
+    color: white;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.user-greeting {
+    font-size: 36px;
+    font-family: 'Cinzel', serif; 
+    color: #ff0000; 
+    text-shadow: 2px 2px 8px #000000; 
+    /* margin-bottom: 20px; */
+    text-align: center;
+    animation: flicker 1.5s infinite alternate; 
+}
+
+@keyframes flicker {
+    0% {
+        opacity: 1;
+        text-shadow: 2px 2px 8px #000000;
+    }
+    50% {
+        opacity: 0.8;
+        text-shadow: 2px 2px 12px #ff0000;
+    }
+    100% {
+        opacity: 1;
+        text-shadow: 2px 2px 8px #000000;
+    }
+}
+
+.user-fighters-section {
+    margin-top: 20px;
+}
+
+.user-fighters-title {
+    font-size: 24px;
+    margin-bottom: 20px;
+    font-family: 'Orbitron', sans-serif; 
+    font-weight: bold;
+    color: #00ffcc;
+    background-color: #333333;
+    padding: 15px 30px;
+    border: 3px solid #00ffcc;
+    border-radius: 12px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-shadow: 0 0 10px rgba(0, 255, 204, 0.75), 0 0 20px rgba(0, 255, 204, 0.5);
+    box-shadow: 0 0 15px rgba(0, 255, 204, 0.5), inset 0 0 5px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease-in-out;
+}
+
+.user-fighters-list {
+    margin-bottom: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.user-fighter-card {
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+    padding: 15px;
+   
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.user-fighter-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.user-fighter-name {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.user-fighter-img-wrapper {
+    height: 150px;
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.user-fighter-img {
+    width: 100%;
+    height: auto;
+}
+.user-fighter-buttons {
+    margin-top: 10px;
+}
+
+.user-fighter-button {
+    background-color: #007BFF;
+    border: none;
+    color: white;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.user-fighter-button:hover {
+    background-color: #0056b3;
+}
+.userImageAndStats{
+    max-width: 800px;
+}
