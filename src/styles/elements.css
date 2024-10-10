@@ -4,7 +4,7 @@
   align-items: center;
   justify-content: center;
   gap: 3rem;
-  background-image: url('../images/forests/26551944-1471842886.webp');
+  background-image: url("../public/static/images/forests/26551944-1471842886.webp");
   background-size: cover;
   background-position: center;
   width: 99vw;
@@ -19,7 +19,7 @@
   align-items: center;
   justify-content: center;
   gap: 3rem;
-  background-image: url('../images/forests/yPo3aW.jpg');
+  background-image: url("../public/static/images/forests/yPo3aW.jpg");
   background-size: cover;
   background-position: center;
   width: 99vw;
@@ -34,7 +34,7 @@
   align-items: center;
   justify-content: center;
   gap: 3rem;
-  background-image: url('../images/forests/halloween-scary-pacific-forests-2K-wallpaper.jpg');
+  background-image: url("../public/static/images/forests/halloween-scary-pacific-forests-2K-wallpaper.jpg");
   background-size: cover;
   background-position: center;
   width: 99vw;
@@ -50,7 +50,7 @@
   align-items: center;
   justify-content: center;
   gap: 3rem;
-  background-image: url('../images/forests/The-Science-Behind-Why-Howling-Wind-Is-Spooky_273772163_andreiuc88-1.jpg');
+  background-image: url("../public/static/images/forests/The-Science-Behind-Why-Howling-Wind-Is-Spooky_273772163_andreiuc88-1.jpg");
   background-size: cover;
   background-position: center;
   width: 99vw;

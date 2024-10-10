@@ -1,34 +1,44 @@
-import { Disclosure, DisclosureButton, DisclosurePanel, Menu, MenuButton, MenuItems, MenuItem } from '@headlessui/react';
-import { Bars3Icon, BellIcon, XMarkIcon } from '@heroicons/react/24/outline';
-import { useContext, useEffect, useState } from 'react';
-import { Link, NavLink } from 'react-router-dom';
-import { useAuthContext } from '../contexts/UserContext';
+import {
+  Disclosure,
+  DisclosureButton,
+  DisclosurePanel,
+  Menu,
+  MenuButton,
+  MenuItems,
+  MenuItem,
+} from "@headlessui/react";
+import { Bars3Icon, BellIcon, XMarkIcon } from "@heroicons/react/24/outline";
+import { useContext, useEffect, useState } from "react";
+import { Link, NavLink } from "react-router-dom";
+import { useAuthContext } from "../contexts/UserContext";
 
 const initialNavigation = [
-  { name: 'Dashboard', href: '/', current: false },
-  { name: 'About', href: '/about', current: false },
-  { name: 'Events', href: '/events', current: false },
-  { name: 'Armory', href: '#', current: false },
+  { name: "Dashboard", href: "/", current: false },
+  { name: "About", href: "/about", current: false },
+  { name: "Events", href: "/events", current: false },
+  { name: "Armory", href: "#", current: false },
 ];
 
-const authNavigation = [
-  { name: 'Arena', href: '/arena', current: false },
-];
+const authNavigation = [{ name: "Arena", href: "/arena", current: false }];
 
 function classNames(...classes) {
-  return classes.filter(Boolean).join(' ');
+  return classes.filter(Boolean).join(" ");
 }
 
 export default function Navigation() {
   const { isAuthenticated } = useAuthContext();
   const [newNavigation, setNewNavigation] = useState(() => {
-    return isAuthenticated ? [...initialNavigation, ...authNavigation] : initialNavigation;
+    return isAuthenticated
+      ? [...initialNavigation, ...authNavigation]
+      : initialNavigation;
   });
 
   const handleNavClick = (clickedItem) => {
     setNewNavigation((prevNavigation) =>
       prevNavigation.map((item) =>
-        item.name === clickedItem.name ? { ...item, current: true } : { ...item, current: false }
+        item.name === clickedItem.name
+          ? { ...item, current: true }
+          : { ...item, current: false }
       )
     );
   };
@@ -49,43 +59,91 @@ export default function Navigation() {
             <DisclosureButton className="group relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
               <span className="absolute -inset-0.5" />
               <span className="sr-only">Open main menu</span>
-              <Bars3Icon aria-hidden="true" className="block h-6 w-6 group-data-[open]:hidden" />
-              <XMarkIcon aria-hidden="true" className="hidden h-6 w-6 group-data-[open]:block" />
+              <Bars3Icon
+                aria-hidden="true"
+                className="block h-6 w-6 group-data-[open]:hidden"
+              />
+              <XMarkIcon
+                aria-hidden="true"
+                className="hidden h-6 w-6 group-data-[open]:block"
+              />
             </DisclosureButton>
           </div>
           <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
             <div className="flex flex-shrink-0 items-center">
-              <img alt="Your Company" src="./images/18plus.png" className="h-8 w-auto" />
+              <img
+                alt="Your Company"
+                src="./public/static/images/18plus.png"
+                className="h-8 w-auto"
+              />
             </div>
             <div className="hidden sm:ml-6 sm:block">
               <div className="flex space-x-4">
                 {newNavigation.map((item) => {
-                  if (item.name === 'Armory') {
+                  if (item.name === "Armory") {
                     return (
                       <Menu as="div" className="relative" key={item.name}>
                         <div>
-                          <MenuButton onClick={() => handleNavClick(item)} className="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium">
+                          <MenuButton
+                            onClick={() => handleNavClick(item)}
+                            className="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium"
+                          >
                             Armory
                           </MenuButton>
                         </div>
                         <MenuItems className="absolute right-0 z-10 mt-2 w-48 origin-top-right rounded-md bg-white py-1 shadow-lg ring-1 ring-black ring-opacity-5 transition focus:outline-none">
                           <MenuItem>
-                            <NavLink onClick={() => handleNavClick(item)} style={({ isActive }) => isActive ? { color: 'white', background: '#1f2937' } : {}} to="/armory/champions" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">
+                            <NavLink
+                              onClick={() => handleNavClick(item)}
+                              style={({ isActive }) =>
+                                isActive
+                                  ? { color: "white", background: "#1f2937" }
+                                  : {}
+                              }
+                              to="/armory/champions"
+                              className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                            >
                               Champions
                             </NavLink>
                           </MenuItem>
                           <MenuItem>
-                            <NavLink onClick={() => handleNavClick(item)} style={({ isActive }) => isActive ? { color: 'white', background: '#1f2937' } : {}} to="/armory/armors" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">
+                            <NavLink
+                              onClick={() => handleNavClick(item)}
+                              style={({ isActive }) =>
+                                isActive
+                                  ? { color: "white", background: "#1f2937" }
+                                  : {}
+                              }
+                              to="/armory/armors"
+                              className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                            >
                               Armors
                             </NavLink>
                           </MenuItem>
                           <MenuItem>
-                            <NavLink onClick={() => handleNavClick(item)} style={({ isActive }) => isActive ? { color: 'white', background: '#1f2937' } : {}} to="/armory/weapons" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">
+                            <NavLink
+                              onClick={() => handleNavClick(item)}
+                              style={({ isActive }) =>
+                                isActive
+                                  ? { color: "white", background: "#1f2937" }
+                                  : {}
+                              }
+                              to="/armory/weapons"
+                              className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                            >
                               Weapons
                             </NavLink>
                           </MenuItem>
                           <MenuItem>
-                            <NavLink to="/armory/checkFighter" style={({ isActive }) => isActive ? { color: 'white', background: '#1f2937' } : {}} className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">
+                            <NavLink
+                              to="/armory/checkFighter"
+                              style={({ isActive }) =>
+                                isActive
+                                  ? { color: "white", background: "#1f2937" }
+                                  : {}
+                              }
+                              className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                            >
                               Check Fighter
                             </NavLink>
                           </MenuItem>
@@ -97,10 +155,12 @@ export default function Navigation() {
                     <Link
                       key={item.name}
                       to={item.href}
-                      aria-current={item.current ? 'page' : undefined}
+                      aria-current={item.current ? "page" : undefined}
                       className={classNames(
-                        item.current ? 'bg-gray-900 text-white' : 'text-gray-300 hover:bg-gray-700 hover:text-white',
-                        'rounded-md px-3 py-2 text-sm font-medium'
+                        item.current
+                          ? "bg-gray-900 text-white"
+                          : "text-gray-300 hover:bg-gray-700 hover:text-white",
+                        "rounded-md px-3 py-2 text-sm font-medium"
                       )}
                       onClick={() => handleNavClick(item)}
                     >
@@ -128,22 +188,40 @@ export default function Navigation() {
                   <MenuButton className="relative flex rounded-full bg-gray-800 text-sm focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800">
                     <span className="absolute -inset-1.5" />
                     <span className="sr-only">Open user menu</span>
-                    <img alt="" src="../../images/neutral-user/random_person.jpg" className="h-8 w-8 rounded-full" />
+                    <img
+                      alt=""
+                      src="../../public/static/images/neutral-user/random_person.jpg"
+                      className="h-8 w-8 rounded-full"
+                    />
                   </MenuButton>
                 </div>
-                <MenuItems transition className="absolute right-0 z-10 mt-2 w-48 origin-top-right rounded-md bg-white py-1 shadow-lg ring-1 ring-black ring-opacity-5 transition focus:outline-none">
+                <MenuItems
+                  transition
+                  className="absolute right-0 z-10 mt-2 w-48 origin-top-right rounded-md bg-white py-1 shadow-lg ring-1 ring-black ring-opacity-5 transition focus:outline-none"
+                >
                   <MenuItem>
-                    <Link to="/my-profile" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">
+                    <Link
+                      to="/my-profile"
+                      className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                    >
                       Your Profile
                     </Link>
                   </MenuItem>
-                  {isAuthenticated && (<MenuItem>
-                    <Link to="/createChampion" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">
-                      Create Champion
-                    </Link>
-                  </MenuItem>)}
+                  {isAuthenticated && (
+                    <MenuItem>
+                      <Link
+                        to="/createChampion"
+                        className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                      >
+                        Create Champion
+                      </Link>
+                    </MenuItem>
+                  )}
                   <MenuItem>
-                    <Link to="/logout" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">
+                    <Link
+                      to="/logout"
+                      className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                    >
                       Sign out
                     </Link>
                   </MenuItem>
@@ -155,17 +233,30 @@ export default function Navigation() {
                   <MenuButton className="relative flex rounded-full bg-gray-800 text-sm focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800">
                     <span className="absolute -inset-1.5" />
                     <span className="sr-only">Open user menu</span>
-                    <img alt="" src="../../images/neutral-user/1206832.jpg" className="h-8 w-8 rounded-full" />
+                    <img
+                      alt=""
+                      src="../../public/static/images/neutral-user/1206832.jpg"
+                      className="h-8 w-8 rounded-full"
+                    />
                   </MenuButton>
                 </div>
-                <MenuItems transition className="absolute right-0 z-10 mt-2 w-48 origin-top-right rounded-md bg-white py-1 shadow-lg ring-1 ring-black ring-opacity-5 transition focus:outline-none">
+                <MenuItems
+                  transition
+                  className="absolute right-0 z-10 mt-2 w-48 origin-top-right rounded-md bg-white py-1 shadow-lg ring-1 ring-black ring-opacity-5 transition focus:outline-none"
+                >
                   <MenuItem>
-                    <Link to="/login" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">
+                    <Link
+                      to="/login"
+                      className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                    >
                       Login
                     </Link>
                   </MenuItem>
                   <MenuItem>
-                    <Link to="/register" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">
+                    <Link
+                      to="/register"
+                      className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                    >
                       Register
                     </Link>
                   </MenuItem>
@@ -183,10 +274,12 @@ export default function Navigation() {
               key={item.name}
               as="a"
               href={item.href}
-              aria-current={item.current ? 'page' : undefined}
+              aria-current={item.current ? "page" : undefined}
               className={classNames(
-                item.current ? 'bg-gray-900 text-white' : 'text-gray-300 hover:bg-gray-700 hover:text-white',
-                'block rounded-md px-3 py-2 text-base font-medium'
+                item.current
+                  ? "bg-gray-900 text-white"
+                  : "text-gray-300 hover:bg-gray-700 hover:text-white",
+                "block rounded-md px-3 py-2 text-base font-medium"
               )}
             >
               {item.name}

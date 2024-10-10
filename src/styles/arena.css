@@ -1,122 +1,127 @@
 .arenaBackground {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 3rem;
-    background-image: url('../../images/arena/craiyon_195306_dark_arena_with_a_circle_in_the_middle_the_walls_of_the_arena_are_surrounded_with_tre.png');
-    background-size: cover;
-    background-position: center;
-    width: 100vw;
-    height: 100vh;
-    color: white;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+  background-image: url("../../public/static/images/arena/craiyon_195306_dark_arena_with_a_circle_in_the_middle_the_walls_of_the_arena_are_surrounded_with_tre.png");
+  background-size: cover;
+  background-position: center;
+  width: 100vw;
+  height: 100vh;
+  color: white;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
 }
 
 .chooseFighter {
-    font-size: 40px; 
-    font-weight: bold;
-    font-family: 'Press Start 2P', cursive; 
-    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7), 0 0 10px rgba(255, 255, 255, 0.5); 
-    background: linear-gradient(45deg, #ff0000, #ff1100, #ff2200, #ff3300);
-    -webkit-background-clip: text; 
-    color: transparent; 
-    animation: gradientShift 3s infinite;
-    text-align: center; 
-    margin-bottom: 30px; 
+  font-size: 40px;
+  font-weight: bold;
+  font-family: "Press Start 2P", cursive;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7), 0 0 10px rgba(255, 255, 255, 0.5);
+  background: linear-gradient(45deg, #ff0000, #ff1100, #ff2200, #ff3300);
+  -webkit-background-clip: text;
+  color: transparent;
+  animation: gradientShift 3s infinite;
+  text-align: center;
+  margin-bottom: 30px;
 }
 
 @keyframes gradientShift {
-    0% { background-position: 0% 50%; }
-    50% { background-position: 100% 50%; }
-    100% { background-position: 0% 50%; }
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
-
 .fighterCardContainer {
-    display: flex;
-    align-items: center;
-    gap: 20px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
 }
 
 .pointer {
-    font-size: 48px;
-    cursor: pointer;
-    user-select: none;
-    transition: transform 0.3s ease;
-    color: rgba(202, 202, 202, 0.9);;
+  font-size: 48px;
+  cursor: pointer;
+  user-select: none;
+  transition: transform 0.3s ease;
+  color: rgba(202, 202, 202, 0.9);
 }
 
 .pointer:hover {
-    transform: scale(1.2);
+  transform: scale(1.2);
 }
 
 .fighterCard {
-    background-color: rgba(202, 202, 202, 0.9);
-    border: 2px solid #ddd;
-    border-radius: 15px;
-    padding: 20px;
-    width: 250px;
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
-    text-align: center;
-    color: #333;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background-color: rgba(202, 202, 202, 0.9);
+  border: 2px solid #ddd;
+  border-radius: 15px;
+  padding: 20px;
+  width: 250px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  color: #333;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .fighterCard:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+  transform: translateY(-10px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
 }
 
 .imageBox {
-    border: 2px solid #ddd;
-    border-radius: 10px;
-    padding: 5px;
-    margin-bottom: 15px;
-    transition: transform 0.3s ease, border-color 0.3s ease;
+  border: 2px solid #ddd;
+  border-radius: 10px;
+  padding: 5px;
+  margin-bottom: 15px;
+  transition: transform 0.3s ease, border-color 0.3s ease;
 }
 
 .fighterCard:hover .imageBox {
-    transform: scale(1.05);
-    border-color: #aaa;
+  transform: scale(1.05);
+  border-color: #aaa;
 }
 
 .fighterImage {
-    width: 200px;
-    height: auto;
-    border-radius: 5px;
-    height: 200px;
+  width: 200px;
+  height: auto;
+  border-radius: 5px;
+  height: 200px;
 }
 
 .fighterName {
-    margin-top: 15px;
-    font-size: 20px;
-    font-weight: bold;
+  margin-top: 15px;
+  font-size: 20px;
+  font-weight: bold;
 }
 
 .fighterElement {
-    margin-top: 10px;
-    font-size: 16px;
-    color: #666;
+  margin-top: 10px;
+  font-size: 16px;
+  color: #666;
 }
 
 .pickButton {
-    background-color: #007bff;
-    border: none;
-    border-radius: 5px;
-    color: #fff;
-    cursor: pointer;
-    font-size: 1em;
-    padding: 10px 20px;
-    text-align: center;
-    text-decoration: none;
-    margin-top: 15px;
-    transition: background-color 0.3s ease, transform 0.3s ease;
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+  font-size: 1em;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  margin-top: 15px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
 .pickButton:hover {
-    background-color: #0056b3;
-    transform: translateY(-3px);
+  background-color: #0056b3;
+  transform: translateY(-3px);
 }
