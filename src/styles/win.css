@@ -4,7 +4,7 @@
   align-items: center;
   justify-content: center;
   gap: 3rem;
-  background-image: url("../../public/static/images/battleResults/pixelcut-export.jpeg");
+  background-image: url("/public/static/images/battleResults/pixelcut-export.jpeg");
   background-size: cover;
   background-position: center;
   width: 99vw;
@@ -122,7 +122,7 @@
   align-items: center;
   justify-content: center;
   gap: 3rem;
-  background-image: url("../../public/static/images/battleResults/224927-mist-nature-landscape-clouds-dead_trees-sunrise-fire-burning-forest-spooky.jpg");
+  background-image: url("/public/static/images/battleResults/224927-mist-nature-landscape-clouds-dead_trees-sunrise-fire-burning-forest-spooky.jpg");
   background-size: cover;
   background-position: center;
   width: 99vw;
@@ -138,7 +138,7 @@
   align-items: center;
   justify-content: center;
   gap: 3rem;
-  background-image: url("../../public/static/images/battleResults/635c412e0ac99f16f7fb998439ba5552.png");
+  background-image: url("/public/static/images/battleResults/635c412e0ac99f16f7fb998439ba5552.png");
   background-size: cover;
   background-position: center;
   width: 99vw;

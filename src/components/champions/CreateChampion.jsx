@@ -87,7 +87,7 @@ export default function CreateChampion({ goBackHome }) {
     changeHandler({
       target: {
         name: "img",
-        value: `/public/static/images/fighters-images/${file.name}`,
+        value: `/static/images/fighters-images/${file.name}`,
       },
     });
   };

@@ -71,7 +71,7 @@ body {
 /* Events Image */
 .events-image {
   flex: 1;
-  background-image: url("../../public/static/images/events/a19a56_536230a4991d4adfbefb20d068181875~mv2.webp");
+  background-image: url("/static/images/events/a19a56_536230a4991d4adfbefb20d068181875~mv2.webp");
   background-size: cover;
   background-position: center;
 }
@@ -124,7 +124,7 @@ body {
   display: flex;
   flex-direction: row;
   height: 50vh;
-  background-image: url("../../public/static/images/events/a19a56_6bd7840705d74c678ac8398f3c2295f5~mv2.webp");
+  background-image: url("/static/images/events/a19a56_6bd7840705d74c678ac8398f3c2295f5~mv2.webp");
   background-size: cover;
   background-position: center;
 }
@@ -138,11 +138,11 @@ body {
   padding: 2rem;
   box-sizing: border-box;
   text-align: center;
-  background-image: url("../../public/static/images/events/a19a56_6bd7840705d74c678ac8398f3c2295f5~mv2.webp");
+  background-image: url("/static/images/events/a19a56_6bd7840705d74c678ac8398f3c2295f5~mv2.webp");
 }
 .events-image2 {
   flex: 1;
-  background-image: url("../../public/static/images/events/top-5-esports-earnings-09-ba81.jpg");
+  background-image: url("/static/images/events/top-5-esports-earnings-09-ba81.jpg");
   background-size: cover;
   background-position: center;
 }

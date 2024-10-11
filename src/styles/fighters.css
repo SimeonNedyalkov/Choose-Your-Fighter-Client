@@ -1,5 +1,5 @@
 .backgroundImageChampions {
-  background-image: url("../public/static/images/mystical-forest-scene-at-night-as-digital-art-generate-ai-free-photo.jpg");
+  background-image: url("/static/images/mystical-forest-scene-at-night-as-digital-art-generate-ai-free-photo.jpg");
   background-size: cover;
   background-position: center;
   width: 99vw;

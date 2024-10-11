@@ -73,7 +73,7 @@ export default function Navigation() {
             <div className="flex flex-shrink-0 items-center">
               <img
                 alt="Your Company"
-                src="../public/static/images/18plus.png"
+                src="/static/images/18plus.png"
                 className="h-8 w-auto"
               />
             </div>
@@ -190,7 +190,7 @@ export default function Navigation() {
                     <span className="sr-only">Open user menu</span>
                     <img
                       alt=""
-                      src="../../public/static/images/neutral-user/random_person.jpg"
+                      src="/static/images/neutral-user/random_person.jpg"
                       className="h-8 w-8 rounded-full"
                     />
                   </MenuButton>
@@ -235,7 +235,7 @@ export default function Navigation() {
                     <span className="sr-only">Open user menu</span>
                     <img
                       alt=""
-                      src="../../public/static/images/neutral-user/1206832.jpg"
+                      src="/static/images/neutral-user/1206832.jpg"
                       className="h-8 w-8 rounded-full"
                     />
                   </MenuButton>

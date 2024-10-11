@@ -67,7 +67,7 @@
   box-sizing: border-box;
   height: 51px;
   width: 51px;
-  background: url("../../public/static/images/home-image/btn_pause.png");
+  background: url("/static/images/home-image/btn_pause.png");
   top: auto;
   right: 40px;
   bottom: 40px;
@@ -87,7 +87,7 @@
   box-sizing: border-box;
   height: 51px;
   width: 51px;
-  background: url("../../public/static/images/home-image/btn_play.png");
+  background: url("/static/images/home-image/btn_play.png");
   top: auto;
   right: 40px;
   bottom: 40px;

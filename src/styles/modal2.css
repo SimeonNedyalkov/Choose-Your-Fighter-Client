@@ -15,7 +15,7 @@
   min-height: 31.8rem !important;
   width: 39.125rem !important;
   display: block;
-  background-image: url("../../public/static/images/create-champion/substrate_top.png") !important;
+  background-image: url("/static/images/create-champion/substrate_top.png") !important;
   background-position: center top !important;
   background-repeat: no-repeat !important;
   inset: 9vw auto auto 50%;
@@ -101,7 +101,7 @@
   bottom: -1.4rem;
   height: 14rem !important;
   width: 100% !important;
-  background-image: url("../../public/static/images/create-champion/substrate_bottom.png") !important;
+  background-image: url("/static/images/create-champion/substrate_bottom.png") !important;
   background-position: center top !important;
   background-repeat: no-repeat !important;
 }
@@ -175,7 +175,7 @@
   top: auto !important;
   width: 1.5rem !important;
   z-index: 2 !important;
-  background-image: url("../../public/static/images/create-champion/ic_username.png");
+  background-image: url("/static/images/create-champion/ic_username.png");
   background-repeat: no-repeat;
   right: auto;
   transform: translate(75%, -50%);
@@ -200,7 +200,7 @@
   top: 0;
   background-position: bottom !important;
   background-size: 20.13rem 2.9rem;
-  background-image: url("../../public/static/images/create-champion/field-empty.png");
+  background-image: url("/static/images/create-champion/field-empty.png");
   background-repeat: no-repeat;
 }
 .wrapperDiv {
@@ -218,7 +218,7 @@
   color: #fff;
   margin: 0 auto 0.94rem;
   position: relative;
-  background-image: url("../../public/static/images/create-champion/field.svg");
+  background-image: url("/static/images/create-champion/field.svg");
   background-repeat: no-repeat;
 }
 .separator {
@@ -236,7 +236,7 @@
   height: 0.5rem !important;
   margin: 0 auto 0.5rem;
   width: 20.125rem !important;
-  background-image: url("../../public/static/images/create-champion/ic_decor.svg");
+  background-image: url("/static/images/create-champion/ic_decor.svg");
   background-position: center top;
   background-repeat: no-repeat;
 }
@@ -284,7 +284,7 @@
   color: #fff;
   margin: 0 auto 0.94rem;
   position: relative;
-  background-image: url("../../public/static/images/create-champion/field.svg");
+  background-image: url("/static/images/create-champion/field.svg");
   background-repeat: no-repeat;
 }
 .idk1 {
@@ -306,7 +306,7 @@
   top: 0;
   background-position: bottom !important;
   background-size: 10.13rem 1.9rem;
-  background-image: url("../../public/static/images/create-champion/field-empty.png");
+  background-image: url("/static/images/create-champion/field-empty.png");
   background-repeat: no-repeat;
 }
 .statsDiv {
@@ -332,7 +332,7 @@
   right: 0;
   top: 0;
   background-size: contain;
-  background-image: url("../../public/static/images/create-champion/btn_hover.svg");
+  background-image: url("/static/images/create-champion/btn_hover.svg");
   background-position: center top;
   background-repeat: no-repeat;
 }
@@ -354,7 +354,7 @@
   top: 0;
   animation: PGGru4 2s infinite;
   background-size: contain;
-  background-image: url("../../public/static/images/create-champion/btn_hover.svg");
+  background-image: url("/static/images/create-champion/btn_hover.svg");
   background-position: center top;
   background-repeat: no-repeat;
 }
@@ -377,7 +377,7 @@
   padding: 0 1rem;
   width: 20.125rem;
   will-change: visibility, opacity;
-  background-image: url("../../public/static/images/create-champion/btn_default.svg");
+  background-image: url("/static/images/create-champion/btn_default.svg");
   background-position: center top;
   background-repeat: no-repeat;
 }
@@ -436,7 +436,7 @@
   color: #fff;
   margin: 0 auto 0.94rem;
   position: relative;
-  background-image: url("../../public/static/images/create-champion/field.svg");
+  background-image: url("/static/images/create-champion/field.svg");
   background-repeat: no-repeat;
 }
 .idk2 {
@@ -458,6 +458,6 @@
   top: 0;
   background-position: bottom !important;
   background-size: 16.13rem 1.9rem;
-  background-image: url("../../public/static/images/create-champion/field-empty.png");
+  background-image: url("/static/images/create-champion/field-empty.png");
   background-repeat: no-repeat;
 }

@@ -4,7 +4,7 @@
   align-items: center;
   justify-content: center;
   gap: 3rem;
-  background-image: url("../../public/static/images/arena/craiyon_195306_dark_arena_with_a_circle_in_the_middle_the_walls_of_the_arena_are_surrounded_with_tre.png");
+  background-image: url("/static/images/arena/craiyon_195306_dark_arena_with_a_circle_in_the_middle_the_walls_of_the_arena_are_surrounded_with_tre.png");
   background-size: cover;
   background-position: center;
   width: 100vw;

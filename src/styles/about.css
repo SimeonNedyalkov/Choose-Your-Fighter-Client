@@ -3,7 +3,7 @@
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  background-image: url("../../public/static/images/aboutus/2.wp2668807.png");
+  background-image: url("/public/static/images/aboutus/2.wp2668807.png");
   background-size: cover;
   background-position: center;
   height: calc(100vh + 144px);

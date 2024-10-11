@@ -69,7 +69,7 @@ export default function BattleSimulation() {
         {vsVisible && (
           <div className="battleSimulationVS">
             <img
-              src="../../../public/static/images/justInCase/vs-versus-battle-icon-sign-symbol-black-red-design-transparent-background-free-png.png"
+              src="/static/images/justInCase/vs-versus-battle-icon-sign-symbol-black-red-design-transparent-background-free-png.png"
               alt="VS"
             />
           </div>

@@ -4,10 +4,7 @@ export default function About() {
   return (
     <div className="backgroundAbout">
       <div className="imageAbout">
-        <img
-          src="../../public/static/images/aboutus/tidebreakerAboutUs.png"
-          alt=""
-        />
+        <img src="/static/images/aboutus/tidebreakerAboutUs.png" alt="" />
       </div>
       <main className="about-container">
         <section id="introduction" className="about-section">

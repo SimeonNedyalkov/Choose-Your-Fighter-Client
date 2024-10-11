@@ -4,7 +4,7 @@
   align-items: center;
   justify-content: center;
   gap: 3rem;
-  background-image: url("../../public/static/images/Logo\ maker\ project.png");
+  background-image: url("/static/images/Logo\ maker\ project.png");
   background-size: cover;
   background-position: center;
   width: 30vh;

@@ -97,7 +97,7 @@ export default function BattleGround() {
             </div>
             <div className="battleground-vs">
               <img
-                src="../../public/static/images/justInCase/vs-versus-battle-icon-sign-symbol-black-red-design-transparent-background-free-png.png"
+                src="/static/images/justInCase/vs-versus-battle-icon-sign-symbol-black-red-design-transparent-background-free-png.png"
                 alt="VS"
               />
             </div>
