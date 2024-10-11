@@ -73,7 +73,7 @@ export default function Navigation() {
             <div className="flex flex-shrink-0 items-center">
               <img
                 alt="Your Company"
-                src="./public/static/images/18plus.png"
+                src="../public/static/images/18plus.png"
                 className="h-8 w-auto"
               />
             </div>

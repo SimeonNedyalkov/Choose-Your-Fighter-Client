@@ -5,7 +5,7 @@ export default function About() {
     <div className="backgroundAbout">
       <div className="imageAbout">
         <img
-          src="../public/static/images/aboutus/tidebreakerAboutUs.png"
+          src="../../public/static/images/aboutus/tidebreakerAboutUs.png"
           alt=""
         />
       </div>
