@@ -4,7 +4,7 @@
   align-items: center;
   justify-content: center;
   gap: 3rem;
-  background-image: url("../../../public/static/images/home-image/5692516.jpg");
+  background-image: url("/static/images/home-image/5692516.jpg");
   background-size: cover;
   background-position: center;
   width: 99vw;
