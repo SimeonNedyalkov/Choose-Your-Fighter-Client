@@ -10,7 +10,7 @@ export default function Events2() {
             </span>
             <span className="events-presented">Presented by:</span>
             <img
-              src="../../public/static/logoNoBackground.png"
+              src="/static/images/logoNoBackground.png"
               alt="Spams Logo"
               className="logo"
             />
@@ -31,7 +31,7 @@ export default function Events2() {
       <div className="prizes">
         <div className="prize-item">
           <img
-            src="../../public/static/events/firstPlace.png"
+            src="/static/images/events/firstPlace.png"
             alt="Prize 1"
             className="prize-image"
           />
@@ -42,7 +42,7 @@ export default function Events2() {
         </div>
         <div className="prize-item">
           <img
-            src="../../public/static/events/secondPlace.png"
+            src="/static/images/events/secondPlace.png"
             alt="Prize 2"
             className="prize-image"
           />
@@ -54,7 +54,7 @@ export default function Events2() {
         </div>
         <div className="prize-item">
           <img
-            src="../../public/static/events/thirdPlace.png"
+            src="/static/images/events/thirdPlace.png"
             alt="Prize 3"
             className="prize-image"
           />

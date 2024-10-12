@@ -13,7 +13,7 @@
   align-items: center;
 }
 .navbar-brand {
-  background-image: url("../public/static/ maker\ project.png");
+  background-image: url("/static/ maker\ project.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
